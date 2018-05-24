@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html>
+<div class="background">
+    <head>
+
+      <meta charset="utf-8">
+
+      <title>
+        Formulaire de contact.
+      </title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+      <div class="titre"> <h1 >Formulaire de Contact</h1> </div>
+
+      <hr/>
+
+    </head>
+
+    <body  class="body"><strong>
+      <form method="post" action="envoi.php">
+
+        <fieldset >
+
+         <div class="radio">
+<p>
+           <input type="radio" name="sexe" value="Homme" id="Homme" /> <label for="Homme">Homme</label>
+<div classe="femmee">
+          <input type="radio" name="sexe" value="Femme" id="Femme" /> <label for="Femme">Femme</label>
+        </div>
+</div>
+</p>
+        <br/>
+
+        <p>
+
+        <label for="prenom">Votre Prénom :</label>
+
+        <input type="text" name="prenom" id="prenom" size="30" maxlength="10" />
+
+
+
+        <br/>
+
+
+<div class="nomnom">
+        <label for="nom">Votre Nom :</label>
+
+        <input type="text" name="nom" id="nom" size="30" maxlength="10" />
+</div>
+
+        <br/>
+
+
+<div class="emailemail">
+        <label for="email">Votre Email :</label>
+
+        <input type="email" name="email" id="email" size="30" maxlength="10" />
+</div>
+        </p>
+
+      </fieldset>
+         <input type="checkbox" name="souvenir" id="souvenir" /> <label for="souvenir">Se souvenir de moi.</label><br />
+      </form>
+      <input class="bouton" type="button" value="envoyer">
+
+</strong>
+    </body>
+
+    <footer>
+
+    </footer>
+</div>
+  </html>
