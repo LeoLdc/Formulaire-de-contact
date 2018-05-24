@@ -1,54 +1,41 @@
-<html>
-<body>
-<head>
-<title>Formulaire de contact</title>
-<div>
-<form action="envoi.php" enctype="multipart/form-data" method="post" id="form">
-								<table  cellspacing="0" cellpadding="0" class="form">
-											  <tr>
-												<td  style="width:198px; height:128px">
-													<table  cellspacing="0" cellpadding="0">
-													  <tr>
-														<td  style="width:198px; height:27px"><input name="nom" type="text" value="nom"></td>
-													  </tr>
-													   <tr>
-														<td  style="width:198px; height:27px"><input name="prenom" type="text" value="prenom"></td>
-													  </tr>
-													   <tr>
-														<td  style="width:198px; height:27px"><input name="mail" value="email" lang="type:mail;erreur:- Merci de mettre une adresse mail valide" type="text"></td>
-													  </tr>
-													   <tr>
-														<td  style="width:198px; height:27px"><input name="" type="text" value="objet"></td>
-													  </tr>
-								</table>
-												</td>
-												<td  style="width:202px; height:128px">
-								<table  cellspacing="0" cellpadding="0">
-													  <tr>
-														<td  style="width:202px; height:109px"><textarea name="commentaire" cols="0" rows="0">Message</textarea></td>
-													  </tr>
-													  <tr>
-														<td  style="width:202px; height:19px">
-														<br style="line-height:1px">
-														<img src="images/spacer.gif" alt="" width="116" height="1"><strong><a href="#" onClick="document.getElementById('form').reset()">Annul.</a></strong><img src="images/spacer.gif" alt="" width="15" height="1"><strong><a href="#" onClick="document.getElementById('form').submit()">Env.</a></strong>														</td>
-													  </tr>
-								</table>
-												</td>
-											  </tr>
-											</table>
-											</form>
-                    </div>
-</head>
+<!DOCTYPE html>
 
+  <html>
 
+    <div class="head">
+    </div>
+<img src="CSS/images/ciel.jpg" alt="Mountain View">
+    <body>
 
-<!--<table width="370" height="245" border="1" align="center">
-  <tr>
-    <td align="center">Votre demande <br>
-est bien prise en compte.<br>
-<br>
-Une r&eacute;ponse vous sera envoy&eacute;e prochainement.<br /> <strong>Merci, &agrave; bient&ocirc;t</strong><br /><br /><a href="http://adrien.naulet.free.fr">Retour vers le site</a></td>-->
-  </tr>
-</table>
-</body>
-</html>
+      <head>
+
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+        <meta charset="utf-8">
+
+        <title>Formulaire De Contact</title>
+
+      </head>
+
+      <form action="PHP/envoi.php">
+
+        <label for="sexe">Sexe:</label>
+        <input type="radio" name="sexe" id="homme"
+        value="Homme"/>Homme<input type="radio" name="sexe" id="femme" value="Femme">Femme<br/>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" id="prenom" ><br/>
+
+        <label for="prenom">Nom:</label>
+        <input type="text" name="nom" id="nom" ><br/>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" ><br/>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </body>
+
+  </html>
